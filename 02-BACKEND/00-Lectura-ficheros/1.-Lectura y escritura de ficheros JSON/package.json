@@ -1,0 +1,13 @@
+{
+  "name": "1.-lectura-y-escritura-de-ficheros",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "write": "node write.js",
+    "read": "node read.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

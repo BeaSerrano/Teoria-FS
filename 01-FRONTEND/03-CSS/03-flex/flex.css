@@ -1,0 +1,36 @@
+.padre{
+    /* position:static; */
+
+    height: 500px;
+    background-color: blanchedalmond;
+
+    display:flex;
+
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+
+    /* espacio entre filas y columnas */
+    row-gap: 10px;
+    column-gap: 10px;
+
+    /* centrar sobre eje principal - aqui row!! */
+    justify-content: center;
+
+    /* centrar sobre eje secundario - aqui row!! */
+    align-items: center;
+
+    /* ordena todas las lineas cuando hay wrap hecho */
+    /* align-content: center; */
+}
+
+.hijo{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(71, 149, 161);
+}
+
+.self{
+    /* alinear sobre uno mismo */
+    align-self:flex-start;
+}

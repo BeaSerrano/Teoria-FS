@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basicos CSS</title>
+    <!--google fonts-->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet"> -->
+    <!--nuestro CSS externo-->
+    <link rel="stylesheet" href="inicio.css">
+    <!--css interno-->
+    <style>
+        h1 {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <!--css en linea >>> solo para un elemento-->
+    <h1 style="color:red">Conceptos básicos CSS</h1>
+    <h1>hola mundo</h1>
+
+    <!-- etiqueta >>> coge todas las etiquetas iguales-->
+    <h2>hola soy un heading 2</h2>
+    <h2>soy otro h2</h2>
+
+    <!-- class >>> coge todas las clases iguales, pueden repetirse >>> un elemento puede tener muchas clases-->
+    <h2 class="clase-verde mayuscula">aqui tengo aplicada una clase</h2>
+    <p class="clase-verde">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum dolores odit magnam,
+        reiciendis perspiciatis possimus temporibus sapiente distinctio officia vero, ut repudiandae recusandae quos
+        consequuntur eaque nesciunt alias veritatis ratione!</p>
+
+    <!-- id >>> coge el id, solo uno igual >>> un id por elemento-->
+    <h2 id="id-unico">soy un h2 con identificador ID!</h2>
+
+    <ul class="fondo-azul">
+        <li>
+            <p>hola soy un parrafo dentro de un list item</p>
+        </li>
+        <li>
+            <p>dos</p>
+        </li>
+        <li>tres</li>
+    </ul>
+    <ul class="fondo-rosa">
+        <li>cuatro</li>
+        <li>cinco</li>
+        <li>seis</li>
+    </ul>
+
+    <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nostrum tempora
+        <strong>hola</strong> laudantium ab veniam, optio quam dolor, dicta deleniti impedit harum, nisi autem deserunt
+        quasi culpa non eius repudiandae.
+        Nisi autem eligendi pariatur maiores ipsa officia quo iste cumque, amet laboriosam eveniet corporis consectetur
+        aspernatur fugit nulla ullam adipisci incidunt! <strong>Deserunt</strong> fugit itaque praesentium adipisci ad
+        est reiciendis quod?
+        Esse sapiente explicabo labore delectus nostrum laudantium maiores porro voluptate eaque tempore.
+        <strong>Error</strong> et repudiandae laboriosam perspiciatis hic harum aut. Quasi voluptate mollitia corrupti
+        doloremque at aspernatur! Hic, sit atque.</p>
+
+    <!--pseudoclases >>> : -->
+    <a href="https://drive.google.com/drive/u/3/folders/1a2uojDiyL8QzVnFh50cLUhD7FPUrf__w">clases en google drive 5
+        febrero</a>
+
+    <!--pseudolementos >>> :: -->
+    <ol>
+        <li>cuatro</li>
+        <li>cinco</li>
+        <li>seis</li>
+    </ol>
+
+    <!--unidades de medida-->
+    <h1 class="titulo-medidas">hola mundo!</h1>
+    <!--en el navegador = 1em = 16px >>> 1.5em = 24px-->
+    <p>titulo medida relativa em</p>
+
+    <!--contenedor para viewport height (vh) y width (vw)-->
+    <div class="contenedor-porcentajes">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga repellat ipsa nesciunt ex a facilis
+            atque similique facere, quas incidunt nihil, blanditiis optio assumenda expedita laborum quisquam maiores
+            ut.</p>
+    </div>
+</body>
+
+</html>

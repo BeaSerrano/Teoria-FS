@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas HTML</title>
+    <!-- etiquetas de rrss, holas de estilo css, google fonts -->
+</head>
+
+<body>
+    <!-- lo que se ve en el navegador -->
+    <!-- tag texto -->
+    <h1>Titulo principal h1 - solo uno por página</h1>
+    <h2>Titulo secundario h2</h2>
+    <h3>Titulo h3</h3>
+    <h4>Titulo h4</h4>
+    <h5>Titulo h5</h5>
+    <h6>Titulo h6</h6>
+    <a href="https://mialtoweb.es/webs/tabla/#a">Enlace a tabla peródica de etiquetas html</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quidem quae ratione accusamus maxime corrupti vel
+        vero illum deserunt ea possimus odit veniam, magni deleniti ipsa eius iure? Cumque, alias!
+        Dolor dolorem debitis eligendi perferendis numquam unde animi. Cumque quis itaque recusandae vero quasi
+        inventore tempora rem blanditiis! Fuga nisi error cupiditate consequuntur saepe. Architecto, magnam fugit.
+        Ipsam, repellat praesentium.
+        Provident tempora qui nostrum, atque distinctio eum beatae facere magni earum quis libero expedita, et harum
+        fugit officia, dolorum doloremque voluptatibus pariatur animi iure ducimus quas ea aperiam? Provident, quos!</p>
+    <strong>Texto resaltado en negrita</strong>
+    <!--restaldado semánticamente-->
+    <b>Texto en negrita 2</b>
+    <!--bold-->
+    <small>Texto más pequeño</small>
+
+    <!-- etiquetas contenido agrupado -->
+
+    <!-- orderer list-->
+    <ol>
+        <li>list item 1</li>
+        <li>list item 2</li>
+    </ol>
+    <!--unordered list-->
+    <ul>
+        <li>list item 1</li>
+        <li>list item 2</li>
+    </ul>
+
+    <!-- contenedores-->
+
+    <div>
+        <p>hola, estoy dentro de un div</p>
+    </div>
+
+    <!-- estructura web semántica-->
+    <header>
+        <nav>barra de navegación</nav>
+    </header>
+    <main>
+        <h2>contenido principal de la web</h2>
+        <section>
+            <h3>seccion 1</h3>
+            <p>sección 1 texto Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, earum eaque aperiam ratione
+                sit explicabo repellat minus accusamus deserunt nam quasi natus quos! Necessitatibus magni neque ullam,
+                assumenda beatae ut!</p>
+            <article>
+                <p>subsecciones</p>
+            </article>
+            <article>
+                <p>subsecciones</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <small>esto es el footer</small>
+    </footer>
+
+    <!--contenido externo-->
+    <img src="img/figure.png" alt="logotipo html5" width="200">
+
+    <img src="https://images.unsplash.com/photo-1595876171225-463c72774783?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTl8fHxlbnwwfHx8fHw%3D"
+        alt="perro" height="200">
+
+    <!-- cuidado con map, es un mapa de imagen-->
+
+    <img src="img/workplace.jpg" alt="Workplace" usemap="#workmap">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.google.es">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.elpais.es">
+        <area shape="circle" coords="337,300,44" alt="Coffee" href="https://www.elmundo.es">
+    </map>
+
+    <!--picture es un grupo de imágenes-->
+
+    <!-- ahora si, mapa en iframe --- contenido embebido -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12424.84713348528!2d-6.9730304!3d38.873396150000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16e4308ced35e3%3A0x5b95cb9039947637!2sPlaza%20San%20Francisco!5e0!3m2!1ses!2ses!4v1707158843491!5m2!1ses!2ses" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/SUq5vyVr2cQ?si=ILznzC2UY0tckbkS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!--video y audio-->
+    <video src="videofile.ogg" poster="posterimage.jpg" controls>
+    </video>
+
+    <audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" controls>
+    </audio>
+
+    <!--formularios-->
+    <div style="background-color: aqua;">
+        <!--formulario method: get (recoge info) y post (publica la informacion)-->
+        <!-- required >>> es un campo obligatorio-->
+        <!-- disbabled >>> es un campo deshabilitado-->
+        <form action="PuntoDondeVa" method="GET" name="nombreFormulario">
+            <label for="nombre">Nombre:</label>
+            <input id="nombre" type="text" placeholder="nombre..." required>
+            <label for="cbox2">Este es mi checkbox</label>
+            <input type="checkbox" id="cbox2" value="second_checkbox" />
+            <input type="range" id="volume" name="volume" min="0" max="11" disabled/>
+            <textarea name="areaTexto" id="areaTexto" cols="100" rows="5"></textarea>
+            <input type="submit" value="enviar" />
+        </form>
+    </div>
+
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/input/text">ENLACE A INPUT TYPES!!</a>
+
+    <!--scripts-->
+    <script>
+        //codigo javascript
+    </script>
+    <script src="javascript-externo.js"></script>
+</body>
+
+</html>

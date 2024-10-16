@@ -1,0 +1,5 @@
+{
+    "app.subtitle": "Learn how to change your app language with React Intl",
+    "app.content": "And do not forget to study React",
+    "app.text.change": "Hello {username}!"
+}

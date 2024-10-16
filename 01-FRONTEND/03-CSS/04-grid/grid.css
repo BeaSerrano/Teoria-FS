@@ -1,0 +1,128 @@
+/*con unidades px y %*/
+/* .padre{
+    display: grid;
+    grid-template-columns: 25% 50%;
+    grid-template-rows: 200px 75px;
+    grid-gap:5px;
+} */
+
+/*con fracciones fr*/
+/* .padre{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap:5px;
+} */
+
+/*filas y columnas con repeat*/
+/* .padre{
+    display: grid;
+    grid-template-columns: 300px repeat(2, 100px); 
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap:5px;
+}  */
+
+
+/* .hijos{
+    background-color: aqua;
+    border:1px solid red;
+} */
+
+/* variables en root (raiz del documento)*/
+
+:root{
+    --cielo:rgb(79, 155, 155);
+    --rosa:#ffc0cb;
+    --violeta:blueviolet;
+    --coral: coral;
+    --verde:greenyellow;
+    --negro:black;
+    --azul:blue;
+    --morado:darkmagenta;
+    --gris:gray;
+    --pix10:10px;
+}
+
+/* ------- templates areas ---- */
+
+/* desktop first ---> diseño responsive */
+
+.container{
+    display:grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: 150px 1fr 75px;
+    grid-template-areas: 
+    "header header header"
+    "asideL main asideR"
+    "footer footer footer";
+    min-height: 100vh;
+    grid-gap:var(--pix10);
+}
+
+.miHeader{
+    background-color: var(--cielo, rgb(120, 237, 237));
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.miMain{
+    background-color: var(--rosa);
+    grid-area: main;
+}
+
+.miAsideL{
+    background-color: var(--violeta);
+    grid-area: asideL;
+}
+
+.miAsideR{
+    background-color: var(--coral);
+    grid-area: asideR;
+}
+
+.miFooter{
+    background-color: var(--verde);
+    grid-area: footer;
+}
+
+.logo{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--negro);
+}
+
+/* tablet ---> cambia el color de fonde de header y footer*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    .miHeader{
+        background-color: var(--azul);
+    }
+    .miFooter{
+        background-color: var(--morado);
+    }
+    .container{
+        grid-template-columns: 50px 1fr 50px;
+    }
+}
+
+/* mobile ---> cambia el color de fondo de header y elimina el footer*/
+@media screen and (max-width:767px){
+    .miHeader{
+        background-color: var(--gris);
+    }
+    .miFooter{
+        display:none;
+    }
+    .logo{
+        width:100px;
+        height: 100px;
+    }
+    .container{
+        grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    }
+}

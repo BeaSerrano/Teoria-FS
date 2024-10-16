@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/* top, right, bottom, left*/
+/* -un valor: todos los lados
+    -dos valores: top y bottom / left y right
+    -tres valores: top / left y right / bottom
+    -cuatro valores: top / right / bottom /left
+*/
+
+/*animaciones*/
+
+.animaciones{
+    height: 200px;
+    width:200px;
+    background-color: red;
+    opacity:0;
+
+    /* animation-name:fade; */
+    /* animation-duration: 2000ms; */
+    animation-delay:3000ms;
+    /* animation-iteration-count: infinite; */
+
+    /* atajo animation */
+    animation: fade 2s infinite;
+}
+
+@keyframes fade {
+    0%{
+        opacity:0;
+    }
+    20%{
+        opacity:0.3;
+    }
+    50%{
+        opacity:1;
+    }
+    80%{
+        opacity:0.3;
+    }
+    100%{
+        opacity:0;
+    }
+}
+
+/*contenedores*/
+
+.contenedor1{
+    height: 50px;
+    width:500px;
+    margin:0px 100px 5px;
+    padding:30px;
+    background-color: aqua;
+    border:3px solid red;
+}
+/* todos los elementos de html por defecto tiene display: block (se apilan en vertical) ---> display: inline (se apilan en horizontal */
+
+.inline{
+    display: inline;
+}
+
+.contenedor2{
+    width:150px;
+    margin:auto;
+    padding:15px;
+    background-color: pink;
+    border:5px solid blue;
+}
+
+.contenedor3{
+    height: 150px;
+    width:150px;
+    margin:10px;
+    background-color: coral;
+    border:3px solid greenyellow;
+}
+
+.hijo{
+    width:50%;
+    height: 50%;
+    background-color: blueviolet;
+    border:3px solid white;
+}
+
+/*overflow ---> visible (por defecto), hidden (oculto), scroll, auto */
+.contenedor4{
+    height: 150px;
+    width:150px;
+    margin:10px;
+    background-color: ghostwhite;
+    border:3px solid blue;
+    overflow: scroll;
+}
+
+/*podemos agrupar style, tamaño y color así ---> border:10px solid coral*/ 
+.contenedor5{
+    height: 150px;
+    width:250px;
+    margin:10px;
+    background-color: ghostwhite;
+    border:10px;
+    border-style:solid;
+    border-radius:50px;
+    border-color: coral;
+}
+
+/*box-shadow
+    primer valor: eje y
+    segundo valor: eje x
+    tercer valor: desenfoque
+
+    admite unidades negativas
+*/
+.contenedor6{
+    height: 150px;
+    width:250px;
+    margin:100px;
+    background-color: ghostwhite;
+    border:3px;
+    border-style:solid;
+    border-radius:50px;
+    border-color: coral;
+
+    box-shadow: -50px 10px 100px;
+}
+
+
+/* visibilidad */
+.contenedor7{
+    height: 150px;
+    width:150px;
+    margin:10px;
+    background-color: coral;
+    border:3px solid greenyellow;
+}
+
+.hijo1{
+    background-color: blueviolet;
+    color:white;
+}
+/* oculta el contenido y permanece su hueco */
+.hijo2{
+    background-color: blue;
+    color:white;
+    visibility: hidden;
+}
+
+/* oculta el contenido y su hueco */
+.hijo3{
+    background-color: purple;
+    color:white;
+    display:none;
+}
+

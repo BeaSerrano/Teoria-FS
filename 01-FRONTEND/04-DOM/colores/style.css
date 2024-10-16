@@ -1,0 +1,50 @@
+/* general */ 
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    height: 100vh;
+    background-color: #EB4034;
+    text-align: center;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contenedor */
+#contenedor{
+    height: 250px;
+    width: 250px;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border:5px #000000 solid;
+}
+
+/* texto */
+#color{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* boton */
+button{
+    font-size: 17px;
+    color:#FFFFFF;
+    background-color: #000000;
+    border: 3px #000000 solid;
+    margin:10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+    transition-duration: 0.5s;
+}
+button:hover{
+    background-color: #dcdcdc;
+    color:#000000;
+}

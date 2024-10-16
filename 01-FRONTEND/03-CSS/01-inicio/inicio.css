@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size:15px;
+    font-weight: 400;
+    font-style:italic;
+}
+
+/* selector etiqueta */
+h2 {
+    text-decoration: underline;
+}
+/* selector clase */
+.clase-verde{
+    color: green;
+}
+/* selector id */
+#id-unico{
+    font-style: italic;
+}
+
+.mayuscula{
+    text-transform: uppercase;
+}
+
+.fondo-azul{
+    background-color:aqua;
+}
+
+.fondo-rosa{
+    background-color:pink;
+}
+
+/* hijos */
+.fondo-azul > li{
+    text-transform: uppercase;
+}
+
+.fondo-azul > li > p{
+    color:red;
+}
+
+.fondo-rosa > li {
+    font-weight: bold;
+    color:blue;
+}
+
+/* descendientes */
+.parrafo strong {
+    color:red;
+}
+
+/* pseudoclases */
+a{
+    color:red;
+    text-decoration: none;
+}
+
+a:hover{
+    color:black;
+}
+
+li:first-child{
+    text-decoration: underline;
+}
+
+li:last-child{
+    text-decoration:line-through;
+}
+
+/* pseudoelementos */
+ol > li::after{
+    content:" - To do"
+}
+
+ol > li::before{
+    content:">>> "
+}
+
+/* el padre html tiene una medida absoluta de 10px, el resto de elementos serán a esta medida*/
+html{
+    font-size:1.5em;
+}
+/*15px relativo a html*/
+p{
+    font-size: 1em;
+}
+
+/* con medidas rem tenemos que aplicarlo al elemento raiz --- :root*/
+
+/* medidas en porcentajes */
+.contenedor-porcentajes{
+    background-color: rgb(18, 1, 4, 0.7);
+    height: 50vh;
+    width:80vw;
+    color:#cf2929;
+}

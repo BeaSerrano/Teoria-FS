@@ -1,0 +1,17 @@
+<alumnosRootElement>
+  <alumnos>
+    <name>Rodri</name>
+    <age>43</age>
+    <job>dev</job>
+  </alumnos>
+  <alumnos>
+    <name>Laura</name>
+    <age>37</age>
+    <job>libreria</job>
+  </alumnos>
+  <alumnos>
+    <name>Antonio</name>
+    <age>33</age>
+    <job>dev</job>
+  </alumnos>
+</alumnosRootElement>

@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* variables */
+h1 {
+  color: red;
+}
+
+h2 {
+  color: blue;
+}
+
+p {
+  background-color: greenyellow;
+}
+
+/* filosofía o metodología BEM */
+/* mixins ---> al principio del código por la lectura en cascada ---> scope */
+/* nesting */
+nav {
+  background-color: aqua;
+  text-transform: uppercase;
+}
+nav ul {
+  list-style: none;
+}
+nav li {
+  font-weight: bold;
+  font-size: 20px;
+}
+nav li a {
+  font-style: italic;
+  color: red;
+}
+nav li a:hover {
+  color: blue;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    color: blue;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+#pokemon-info{
+    background-color: antiquewhite;
+    padding:20px;
+    border:3px solid black;
+    margin:20px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+}

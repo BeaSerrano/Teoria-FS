@@ -1,0 +1,17 @@
+{
+  "name": "01-basicnode",
+  "version": "1.0.0",
+  "description": "conceptos básicos de node.js",
+  "main": "read.js",
+  "scripts": {
+    "write": "node write.js",
+    "read": "node read.js"
+  },
+  "keywords": [
+    "json",
+    "readJson",
+    "writeJson"
+  ],
+  "author": "Part Time 01 24",
+  "license": "ISC"
+}

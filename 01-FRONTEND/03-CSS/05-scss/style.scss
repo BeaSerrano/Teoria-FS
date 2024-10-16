@@ -1,0 +1,59 @@
+/* variables */
+$colorRojo:red;
+$colorAzul:blue;
+$colorVerde:greenyellow;
+$colorCielo:aqua;
+
+$mobileSize: 768px;
+
+h1{
+    color:$colorRojo;
+}
+
+h2{
+    color:$colorAzul;
+}
+
+p{
+    background-color: $colorVerde;
+}
+
+/* filosofía o metodología BEM */
+
+/* mixins ---> al principio del código por la lectura en cascada ---> scope */
+@mixin navbar($colorCielo){
+    background-color: $colorCielo;
+    text-transform: uppercase;
+}
+
+@mixin mobile(){
+    @media (max-width:$mobileSize) {
+        @content;
+    }
+}
+
+/* nesting */
+nav {
+    @include navbar($colorCielo);
+    ul{
+        list-style:none;
+    }
+    li{
+        font-weight: bold;
+        font-size: 20px;
+        a{
+            font-style:italic;
+            color:$colorRojo;
+            &:hover{
+                color:$colorAzul;
+            }
+        }
+    }
+}
+
+h1{
+    @include mobile(){
+        color:blue;
+    }
+}
+

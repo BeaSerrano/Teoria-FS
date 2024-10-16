@@ -1,0 +1,17 @@
+#titulo-principal{
+  text-decoration: underline;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#titulo-secundario{
+  color:red;
+  font-style:italic;
+}
+p{
+  color:blue;
+}
+.listItem{
+  font-size: 12px;
+  font-weight: lighter;
+  list-style: none;
+}
