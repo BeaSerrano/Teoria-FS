@@ -3,7 +3,7 @@ import './Footer.css'
 export const Footer = () => {
     return (
         <footer>
-            <h3>💖 Neoland</h3>
+            <h3>💖 FullStack</h3>
         </footer>
     )
 }

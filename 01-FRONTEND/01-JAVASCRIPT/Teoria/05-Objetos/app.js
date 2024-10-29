@@ -49,7 +49,7 @@ Método ---> función dentro de un objeto */
 //* Crear un método --> crear una función en un objeto
 
 let empresa = {
-    nombre : 'Neoland', // propiedad
+    nombre : 'FullStack', // propiedad
     sector : 23, // propiedad
     localizacion : 'Madrid', // propiedad
     // método
@@ -79,7 +79,7 @@ for (let key in empresa) {
 }
 // Resultado:
     /* 
-    La clave nombre tiene el valor: Neoland
+    La clave nombre tiene el valor: FullStack
     La clave sector tiene el valor: IT
     La clave localizacion tiene el valor: Madrid
     La clave pausaCafe tiene el valor: function () {console.log(`Es la hora del café 😀`);}
@@ -95,7 +95,7 @@ console.log(clavesUno); // [ 'nombre', 'sector', 'localizacion', 'pausaCafe' ]
 // nos devuelve un array con todos los valores del objeto en forma de su propio tipo de dato
 
 let valoresUno = Object.values(empresa) 
-console.log(valoresUno); // [ 'Neoland', 'IT', 'Madrid', [Function: pausaCafe] ]
+console.log(valoresUno); // [ 'FullStack', 'IT', 'Madrid', [Function: pausaCafe] ]
 
 //// método Object.entries(objeto)
 // crea un array como una colección pareja clave : valor
@@ -106,7 +106,7 @@ let entries = Object.entries(empresa);
 console.log(entries);
 /* 
     [
-        [ 'nombre', 'Neoland' ],
+        [ 'nombre', 'FullStack' ],
         [ 'sector', 23 ],
         [ 'localizacion', 'Madrid' ],
         [ 'pausaCafe', [Function: pausaCafe] ]

@@ -15,7 +15,7 @@ let string2 = 'hola otra vez'; // esto también es un string
 let verdadero = true; // dato booleano true --> 1
 let falso = false; // dato booleano false --> 0
 
-let noDefinido = undefined; // la variable no tiene un valor definido, entonces es undefined
+let noDefinido = undefined; // la variable no tiene un valor definido
 
 let vacio = null; // no hay nada dentro de esa variable
 
@@ -37,12 +37,12 @@ let array = [
     null, 
     {
         nombre: 'Bea',
-        empresa: 'Neoland'
+        empresa: 'The Bridge'
     },
     'otro texto'
 ]; 
 
-// OBJECT ---> coleccion de datos en forma de clave:valor (key:value) tambien separados por comas
+// OBJECT ---> coleccion de datos en forma de clave:valor separados por comas
 let objeto = {
     //clave : valor,
     nombre : "Bea",
@@ -52,7 +52,7 @@ let objeto = {
 
 // FUNCIONES ---> es una accion que podemos reutilizar
 
-let funcion = function nombre(parametro1, parametro2) {
+function nombre(parametro1, parametro2) {
     // instruccion ---> codigo que queramos
 }
 

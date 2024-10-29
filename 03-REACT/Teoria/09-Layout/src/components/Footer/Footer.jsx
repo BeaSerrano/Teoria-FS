@@ -5,7 +5,7 @@ export const Footer = () => {
     return (
         <footer>
             <Flex>
-                <h3>💖 Neoland</h3>
+                <h3>💖 FullStack</h3>
             </Flex>
         </footer>
     )
